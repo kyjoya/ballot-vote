@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px|Source+Sans+Pro');
+$gray: #ECF0F1;
+$blue: #00263C;
+
+body {
+  background: $gray;
+  padding: 100px;
+}
+
+h1 {
+  font-family: 'Slabo 27px', serif;
+  color: $blue;
+}
+
+h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $blue;
+}
+
+#ballot {
+  padding: 50px;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  border: 2px solid $blue;
+}

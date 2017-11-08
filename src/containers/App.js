@@ -1,5 +1,5 @@
 import React from 'react';
-import './stylesheets/app.scss';
+import '../stylesheets/app.scss';
 import CandidateTile from '../components/CandidateTile';
 
 class App extends React.Component {
@@ -13,12 +13,11 @@ class App extends React.Component {
         <CandidateTile
           key={candidate.id}
           name={candidate.name}
-          choice={this.state.choice}
         />
       )
     })
     return (
-      <div>
+      <div id="ballot">
         {candidates}
       </div>
     );
