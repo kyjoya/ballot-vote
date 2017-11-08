@@ -2,9 +2,9 @@ import React from 'react'
 
 const CandidateTile = props => {
   return (
-    <h1 className="candidate-name">
+    <h4 className="candidate-name" onClick={props.clickHandler}>
       {props.name}
-    </h1>
+    </h4>
   )
 }
 
