@@ -8,7 +8,9 @@ class App extends React.Component {
   }
 
   render() {
-    let candidates = this.props.data.map((candidate) => {
+    let ballotInformation = this.props.data;
+
+    let candidates = ballotInformation.map((candidate) => {
       return (
         <CandidateTile
           key={candidate.id}
@@ -17,8 +19,10 @@ class App extends React.Component {
       )
     })
     return (
-      <div id="ballot">
-        {candidates}
+      <div>
+        <div id="ballot">
+          {candidates}
+        </div>
       </div>
     );
   }
