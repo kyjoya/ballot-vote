@@ -6,6 +6,6 @@ import data from './constants/data';
 import App from './containers/App'
 
 ReactDOM.render(
-  <App data={data} />,
+  <App ballotInformation={data} />,
   document.getElementById('app')
 );

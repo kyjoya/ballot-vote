@@ -8,7 +8,8 @@ class App extends React.Component {
   }
 
   render() {
-    let ballotInformation = this.props.data;
+    debugger;
+    let ballotInformation = this.props.ballotInformation.candidates;
 
     let candidates = ballotInformation.map((candidate) => {
       return (
